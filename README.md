@@ -8,6 +8,17 @@ Smart Lead Ranker enhances your lead generation efforts by validating email addr
 - Lead scoring based on title and company size
 - Simple web UI with CSV export
 
+## Repository Contents
+| File                   | Description                                                     |
+| ---------------------- | --------------------------------------------------------------- |
+| `app.py`               | Flask web app to upload, verify, and score leads                |
+| `verify_email.py`      | Basic email regex checker                                       |
+| `scoring.py`           | Simple lead scoring based on title and company size             |
+| `templates/index.html` | Bootstrap-based UI to upload and view results                   |
+| `requirements.txt`     | Dependencies (`Flask`, `pandas`)                                |
+| `README.md`            | Overview, setup guide, and usage instructions (continued below) |
+
+
 ## Setup Instructions
 1. Clone the repo:
 ```bash
@@ -31,9 +42,10 @@ python app.py
 
 ## Sample CSV Format
 ```
-name,email,title,company,company_size
-John Doe,john@acme.com,CEO,Acme Inc,Large
-Jane Smith,jane@startup.com,Manager,Startup Co,Small
+| name       | email                                       | title          | company\_size |
+| ---------- | ------------------------------------------- | -------------- | ------------- |
+| Jane Doe   | [jane@startup.com](mailto:jane@startup.com) | CEO            | Small         |
+| John Smith | [john@bigcorp.com](mailto:john@bigcorp.com) | VP Engineering | Large         |
 ```
 
 ## Output
@@ -43,14 +55,5 @@ Jane Smith,jane@startup.com,Manager,Startup Co,Small
 ## License
 MIT
 
-
-# 7. sample_data/raw_leads.csv
-| name       | email                                       | title          | company\_size |
-| ---------- | ------------------------------------------- | -------------- | ------------- |
-| Jane Doe   | [jane@startup.com](mailto:jane@startup.com) | CEO            | Small         |
-| John Smith | [john@bigcorp.com](mailto:john@bigcorp.com) | VP Engineering | Large         |
-
-
-
-# 8. output/verified_ranked_leads.csv
+# 7. output/verified_ranked_leads.csv
 (Auto-generated after upload)
