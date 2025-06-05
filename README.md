@@ -45,9 +45,9 @@ MIT
 
 
 # 7. sample_data/raw_leads.csv
-name,email,title,company,company_size
-Alice Chen,alice@bigco.com,CEO,BigCo,Large
-Bob Lee,bob@startup.org,Manager,StartupOrg,Small
+name,email,title,company,company_size  
+Alice Chen,alice@bigco.com,CEO,BigCo,Large  
+Bob Lee,bob@startup.org,Manager,StartupOrg,Small  
 Carla Smith,carla@midbiz.net,Director,MidBiz,Medium
 
 
