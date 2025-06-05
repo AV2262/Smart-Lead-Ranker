@@ -45,10 +45,11 @@ MIT
 
 
 # 7. sample_data/raw_leads.csv
-name,email,title,company,company_size  
-Alice Chen,alice@bigco.com,CEO,BigCo,Large  
-Bob Lee,bob@startup.org,Manager,StartupOrg,Small  
-Carla Smith,carla@midbiz.net,Director,MidBiz,Medium
+| name       | email                                       | title          | company\_size |
+| ---------- | ------------------------------------------- | -------------- | ------------- |
+| Jane Doe   | [jane@startup.com](mailto:jane@startup.com) | CEO            | Small         |
+| John Smith | [john@bigcorp.com](mailto:john@bigcorp.com) | VP Engineering | Large         |
+
 
 
 # 8. output/verified_ranked_leads.csv
